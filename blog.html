@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="path/to/your/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="upload.html">Upload Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="blog">
+            <h1>Blog Posts</h1>
+            <div class="blog-grid" id="blogsSection"></div>
+        </section>
+        <section id="feedback">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsSection"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Blog</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
